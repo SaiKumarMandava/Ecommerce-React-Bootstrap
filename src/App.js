@@ -15,8 +15,11 @@ function App() {
     <div >
     
     <CartProvider>
-    <Routes>
-    <Route exact path='/' element={<Register/>}/>
+     <Routes>
+    <Route exact path='/' element={<Home/>}/>
+
+      
+    <Route path='/register' element={<Register/>}/>
       <Route path='/productlist' element={<Product/>}/>
       <Route path="/product/:productId" element={<ProductDetails/>} />
       <Route path="/cart1" element={<Cart/>} />
